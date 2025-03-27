@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FNM Men's Grooming</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="nav">
+    <!--<div class="navTop">
+      <div class="navItem">
+        <img src="./img/img/logo-transparent-png.png" alt="FNM Logo" class="logo" />
+      </div>
+    </div> -->
+    <div class="navBottom" style="display: flex; justify-content: flex-end; gap: 20px;">
+
+      <h3 class="menuItem"><a href="index.html">HOME</a></h3>
+      <h3 class="menuItem"><a href="shop.html">SHOP</a></h3>
+      <h3 class="menuItem"><a href="about.html">ABOUT</a></h3>
+      <h3 class="menuItem">
+        <a href="cart.html">
+          <img src="./img/img/shopping-bag.png" alt="Cart" class="cartIcon" />
+          <span class="cartCount" id="cart-count">0</span>
+        </a>
+      </h3>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- <img src="./img/img/menmiror.jpg" alt="Man Grooming Beard" class="heroImg" /> -->
+    <h1 class="heroTitle">Full N' Moisturized</h1>
+    <h2 class="heroDesc">Elevate your beard game with confidence</h2>
+    <a href="shop.html">
+      <button class="shopButton">SHOP NOW</button>
+    </a>
+  </section>
+
+  <!-- Search Bar -->
+  <div style="text-align:center; margin: 40px 0;">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search for products..."
+      style="
+        padding: 12px 18px;
+        width: 340px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1em;
+      "
+
+      onekeyup="searchProducts()"
+    />
+  </div>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+     <!-- <img src="/img/img/hydrate.jpeg" alt="Hydrate" class="featureIcon" /> -->
+      <span class="featureTitle">HYDRATE</span>
+      <span class="featureDesc">Soft, itch-free beards start here.</span>
+    </div>
+    <div class="feature">
+     <!-- <img src="images/grow-icon.png" alt="Grow" class="featureIcon" /> -->
+      <span class="featureTitle">GROW</span>
+      <span class="featureDesc">Strengthen and thicken your beard.</span>
+    </div>
+    <div class="feature">
+     <!-- <img src="images/style-icon.png" alt="Style" class="featureIcon" /> -->
+      <span class="featureTitle">STYLE</span>
+      <span class="featureDesc">Tame and define with ease.</span>
+    </div>
+  </section>
+
+  <!-- Featured Products Slider -->
+<section class="productsSlider" style="text-align:center; padding: 20px;">
+    <h2 style="color:#0b3d0b;">Featured Products</h2>
+    <div class="sliderContainer" style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 15px; padding: 10px;">
+      
+      <div class="productCard" style="flex: 0 0 auto; width: 300px; scroll-snap-align: start; text-align: center; border: 1px solid #ddd; border-radius: 10px; padding: 15px;">
+        <img src="/img/img/beardoil.jpeg" alt="Beard Oil" style="width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 8px;">
+        <h3>Beard Oil</h3>
+        <p>Hydrates, softens, and adds shine. 100% natural ingredients.</p>
+        <button style="background:#0b3d0b; color:white; padding:10px; border:none; cursor:pointer;">Add to Cart</button>
+      </div>
+  
+      <div class="productCard" style="flex: 0 0 auto; width: 300px; scroll-snap-align: start; text-align: center; border: 1px solid #ddd; border-radius: 10px; padding: 15px;">
+        <img src="/img/img/beardbalm.jpeg" alt="Beard Balm" style="width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 8px;">
+        <h3>Beard Balm</h3>
+        <p>Locks in moisture, styles, and nourishes with ease.</p>
+        <button style="background:#0b3d0b; color:white; padding:10px; border:none; cursor:pointer;">Add to Cart</button>
+      </div>
+  
+      <div class="productCard" style="flex: 0 0 auto; width: 300px; scroll-snap-align: start; text-align: center; border: 1px solid #ddd; border-radius: 10px; padding: 15px;">
+        <img src="/img/img/CPbeardwash.jpeg" alt="Beard Wash" style="width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 8px;">
+        <h3>Beard Wash</h3>
+        <p>Gentle cleanser that strengthens hair and skin underneath.</p>
+        <button style="background:#0b3d0b; color:white; padding:10px; border:none; cursor:pointer;">Add to Cart</button>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  <!-- Testimonials Section -->
+  <section style="padding: 60px 20px; background-color: #f2efe9; text-align: center;">
+    <h2 style="color:#0b3d0b;">What Our Customers Say</h2>
+    <p style="max-width: 700px; margin: 20px auto; font-style: italic;">
+      “I’ve tried so many beard products, but nothing leaves my beard as full and soft as FNM. My wife literally won’t stop touching it!” – Mike D.
+    </p>
+    <p style="max-width: 700px; margin: 20px auto; font-style: italic;">
+      “Great scent, zero irritation, and amazing results in just 2 weeks. Highly recommend the beard oil + balm combo!” – James K.
+    </p>
+    <p style="max-width: 700px; margin: 20px auto; font-style: italic;">
+      "With a good routine and it works. I have seen growth where it normal doesn't!" - Michael H.
+    </p>
+    <p> 
+      I started using this balm about 2 months ago and its made a huge difference. No more dry skin under the beard and no itchy-ness. I have incredibly dry skin and this has made a night and day difference! - Christopher
+
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding:20px; background:#0b3d0b; color:#fdf6ec;">
+    &copy; 2025 FNM Men's Grooming — Stay Moisturized.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
