@@ -1,1 +1,1156 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf6ec;
+  color: #111;
+}
 
+#nav {
+  background-color: #0b3d0b;
+  color: #fdf6ec;
+  padding: 15px 20px;
+}
+
+.navTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBottom {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.menuItem {
+  margin: 0 8px;
+}
+
+.menuItem a {
+  color: #fdf6ec;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.menuItem a:hover {
+  color: #a3c293;
+}
+
+.cartIcon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.cartCount {
+  background-color: red;
+  color: white;
+  font-size: 0.75em;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: relative;
+  top: -10px;
+  right: 10px;
+}
+
+.hero {
+  background: linear-gradient(to right, #0b3d0b, #1b5e20);
+  color: #fdf6ec;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.heroTitle {
+  font-size: 3em;
+  margin: 20px 0 10px;
+  color: #a3c293;
+}
+
+.heroDesc {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.shopButton, .checkoutButton, .addToCart {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.shopButton:hover, .checkoutButton:hover, .addToCart:hover {
+  background-color: #1b5e20;
+}
+
+.searchBar {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.searchInput {
+  padding: 12px 18px;
+  width: 340px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.feature {
+  max-width: 200px;
+}
+
+.featureTitle {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #0b3d0b;
+}
+
+.featureDesc {
+  color: #333;
+  font-size: 0.95em;
+  margin-top: 5px;
+}
+
+.productsSlider {
+  text-align: center;
+  padding: 20px;
+}
+
+.productsSlider h2 {
+  color: #0b3d0b;
+}
+
+.sliderContainer {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
+  padding: 10px;
+}
+
+.productCard {
+  flex: 0 0 auto;
+  width: 300px;
+  scroll-snap-align: start;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.productImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.testimonials {
+  padding: 60px 20px;
+  background-color: #f2efe9;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #0b3d0b;
+}
+
+.testimonial {
+  max-width: 700px;
+  margin: 20px auto;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0b3d0b;
+  color: #fdf6ec;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.socialIcon {
+  width: 40px;
+}
+
+.shop {
+  padding: 20px;
+}
+
+.shopTitle {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.shopBanner {
+  margin-bottom: 20px;
+}
+
+.bannerImg {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.filters {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filterButton {
+  margin: 0 10px;
+  padding: 8px 16px;
+  background: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filterButton:hover {
+  background: #bbb;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.productItem {
+  text-align: center;
+}
+
+.productItem:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cart, .checkout {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cartTitle, .checkoutTitle {
+  margin: 20px 0;
+}
+
+.cartItems, .checkoutItems {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cartImg {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cartTotal, .checkoutTotal {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.checkoutForm {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.formTitle {
+  margin: 20px 0 10px;
+}
+
+.formLabel {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.paypalContainer {
+  margin: 20px auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navBottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filterButton {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* product image page*/
+
+
+/* Product Detail Page Styles */
+.product-detail {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff; /* White background for product focus */
+}
+
+.product-detail h1 {
+  color: #0b3d0b; /* Matches site’s green theme */
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 40px; /* Centered with spacing */
+}
+
+.productImg {
+  width: 100%;
+  max-width: 400px; /* Larger than shop grid for detail */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.product-info {
+  max-width: 500px;
+  text-align: left;
+  padding: 20px;
+}
+
+.product-info p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.product-info strong {
+  color: #0b3d0b; /* Green for emphasis */
+}
+
+.product-info label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-info input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 60px;
+  font-size: 1em;
+}
+
+.shipping-info {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light gray for distinction */
+  border-radius: 8px;
+}
+
+.shipping-info h2 {
+  color: #0b3d0b;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.shipping-info p {
+  margin: 10px 0;
+}
+
+.shipping-info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.shipping-info li {
+  margin: 5px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .product-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productImg {
+    max-width: 300px;
+  }
+
+  .product-info {
+    padding: 10px;
+  }
+}
+
+/* Beard Balm Product Page Styles */
+.product-detail {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fdf6ec; /* Matches site background */
+}
+
+.product-detail h1 {
+  color: #2e7d32; /* Lighter green for Beard Balm distinction */
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-transform: uppercase; /* Adds emphasis */
+}
+
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  background-color: #fff; /* White card-like background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+}
+
+.productImg {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #2e7d32; /* Green border for Beard Balm */
+  transition: transform 0.3s ease;
+}
+
+.productImg:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.product-info {
+  max-width: 500px;
+  text-align: left;
+  padding: 20px;
+}
+
+.product-info p {
+  margin: 12px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.product-info strong {
+  color: #2e7d32; /* Matches h1 */
+  font-weight: bold;
+}
+
+.product-info label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #0b3d0b; /* Darker green for contrast */
+}
+
+.product-info input[type="number"] {
+  padding: 8px;
+  border: 1px solid #2e7d32;
+  border-radius: 5px;
+  width: 60px;
+  font-size: 1em;
+  background-color: #fdf6ec;
+}
+
+.shipping-info {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  background-color: #f2efe9; /* Slightly different background */
+  border-radius: 8px;
+  border-left: 4px solid #2e7d32; /* Accent border */
+}
+
+.shipping-info h2 {
+  color: #2e7d32;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.shipping-info p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.shipping-info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.shipping-info li {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .product-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .productImg {
+    max-width: 300px;
+  }
+
+  .product-info {
+    padding: 10px;
+  }
+
+  .shipping-info {
+    padding: 15px;
+  }
+}
+
+
+/* Beard Growth Kit Product Page Styles */
+.product-detail {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fdf6ec; /* Matches site background */
+}
+
+.product-detail h1 {
+  color: #1b5e20; /* Mid-tone green for Beard Growth Kit */
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  letter-spacing: 1px; /* Slight spacing for premium feel */
+}
+
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Slightly stronger shadow */
+}
+
+.productImg {
+  width: 100%;
+  max-width: 450px; /* Larger for kit emphasis */
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #1b5e20; /* Thicker border for kit */
+  transition: box-shadow 0.3s ease;
+}
+
+.productImg:hover {
+  box-shadow: 0 0 10px rgba(27, 94, 32, 0.5); /* Green glow on hover */
+}
+
+.product-info {
+  max-width: 500px;
+  text-align: left;
+  padding: 20px;
+}
+
+.product-info p {
+  margin: 12px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.product-info strong {
+  color: #1b5e20; /* Matches h1 */
+  font-weight: bold;
+}
+
+.product-info label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #0b3d0b; /* Darker green for contrast */
+}
+
+.product-info input[type="number"] {
+  padding: 8px;
+  border: 1px solid #1b5e20;
+  border-radius: 5px;
+  width: 60px;
+  font-size: 1em;
+  background-color: #fdf6ec;
+  transition: border-color 0.3s ease;
+}
+
+.product-info input[type="number"]:focus {
+  border-color: #2e7d32; /* Lighter green on focus */
+  outline: none;
+}
+
+.shipping-info {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-top: 4px solid #1b5e20; /* Top border accent */
+}
+
+.shipping-info h2 {
+  color: #1b5e20;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.shipping-info p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.shipping-info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.shipping-info li {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .product-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .productImg {
+    max-width: 350px;
+  }
+
+  .product-info {
+    padding: 10px;
+  }
+
+  .shipping-info {
+    padding: 15px;
+  }
+}
+
+/* Beard Brush Product Page Styles */
+.product-detail {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fdf6ec; /* Matches site background */
+}
+
+.product-detail h1 {
+  color: #a3c293; /* Light green for Beard Brush */
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  font-weight: 600; /* Slightly lighter weight for simplicity */
+}
+
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+}
+
+.productImg {
+  width: 100%;
+  max-width: 350px; /* Slightly smaller for a simpler product */
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #a3c293; /* Light green border */
+  transition: transform 0.3s ease;
+}
+
+.productImg:hover {
+  transform: scale(1.03); /* Subtle zoom on hover */
+}
+
+.product-info {
+  max-width: 500px;
+  text-align: left;
+  padding: 20px;
+}
+
+.product-info p {
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.product-info strong {
+  color: #a3c293; /* Matches h1 */
+  font-weight: bold;
+}
+
+.product-info label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #0b3d0b; /* Darker green for contrast */
+}
+
+.product-info input[type="number"] {
+  padding: 8px;
+  border: 1px solid #a3c293;
+  border-radius: 5px;
+  width: 60px;
+  font-size: 1em;
+  background-color: #fdf6ec;
+  transition: border-color 0.3s ease;
+}
+
+.product-info input[type="number"]:focus {
+  border-color: #1b5e20; /* Darker green on focus */
+  outline: none;
+}
+
+.shipping-info {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  background-color: #f2efe9; /* Slightly warmer gray */
+  border-radius: 8px;
+  border-right: 4px solid #a3c293; /* Right border accent */
+}
+
+.shipping-info h2 {
+  color: #a3c293;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.shipping-info p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.shipping-info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.shipping-info li {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .product-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .productImg {
+    max-width: 300px;
+  }
+
+  .product-info {
+    padding: 10px;
+  }
+
+  .shipping-info {
+    padding: 15px;
+  }
+}
+
+/* Beard Roller Product Page Styles */
+.product-detail {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fdf6ec; /* Matches site background */
+}
+
+.product-detail h1 {
+  color: #4a704a; /* Muted green for Beard Roller */
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+}
+
+.productImg {
+  width: 100%;
+  max-width: 350px; /* Smaller than kit, suits tool size */
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #4a704a; /* Muted green border */
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.productImg:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  border-color: #2e7d32; /* Brighter green on hover */
+}
+
+.product-info {
+  max-width: 500px;
+  text-align: left;
+  padding: 20px;
+}
+
+.product-info p {
+  margin: 12px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.product-info strong {
+  color: #4a704a; /* Matches h1 */
+  font-weight: bold;
+}
+
+.product-info label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #0b3d0b; /* Darker green for contrast */
+}
+
+.product-info input[type="number"] {
+  padding: 8px;
+  border: 1px solid #4a704a;
+  border-radius: 5px;
+  width: 60px;
+  font-size: 1em;
+  background-color: #fdf6ec;
+  transition: border-color 0.3s ease;
+}
+
+.product-info input[type="number"]:focus {
+  border-color: #1b5e20; /* Mid-tone green on focus */
+  outline: none;
+}
+
+.shipping-info {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  background-color: #f2efe9; /* Slightly warmer gray */
+  border-radius: 8px;
+  border-right: 4px solid #4a704a; /* Right border accent */
+}
+
+.shipping-info h2 {
+  color: #4a704a;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.shipping-info p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.shipping-info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.shipping-info li {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .product-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .productImg {
+    max-width: 300px;
+  }
+
+  .product-info {
+    padding: 10px;
+  }
+
+  .shipping-info {
+    padding: 15px;
+  }
+}
+/* About Us Page Styles */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fdf6ec; /* Matches site background */
+}
+
+.about h1 {
+  color: #2e7d32; /* Vibrant green for About Us */
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.team-introduction, .mission-statement, .company-background {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.team-introduction h2, .mission-statement h2, .company-background h2 {
+  color: #2e7d32;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Wider min-width for two members */
+  gap: 30px; /* Increased gap for better spacing */
+  text-align: left;
+}
+
+.team-member {
+  padding: 15px;
+  border-left: 3px solid #2e7d32;
+}
+
+.team-member h3 {
+  color: #0b3d0b; /* Darker green for names */
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.mission-statement p {
+  color: #333;
+  font-size: 1.1em;
+  line-height: 1.6;
+  padding: 10px 20px;
+  background-color: #f9f9f9; /* Light gray for emphasis */
+  border-radius: 5px;
+}
+
+.company-background p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 15px;
+  }
+
+  .team-members {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .team-introduction, .mission-statement, .company-background {
+    padding: 15px;
+  }
+
+  .about h1 {
+    font-size: 2em;
+  }
+
+  .team-introduction h2, .mission-statement h2, .company-background h2 {
+    font-size: 1.5em;
+  }
+}
+
+.legal {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fdf6ec;
+}
+
+.legal h1 {
+  color: #2e7d32;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.legal-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.legal-content h2 {
+  color: #0b3d0b;
+  font-size: 1.5em;
+  margin: 20px 0 10px;
+}
+
+.legal-content p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .legal {
+    padding: 40px 15px;
+  }
+
+  .legal h1 {
+    font-size: 2em;
+  }
+}
+
+/* FAQs Section on About Us Page */
+.faqs {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.faqs h2 {
+  color: #2e7d32;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.faq-list {
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-item h3 {
+  color: #0b3d0b;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  color: #333;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .faqs {
+    padding: 15px;
+  }
+
+  .faqs h2 {
+    font-size: 1.5em;
+  }
+}
