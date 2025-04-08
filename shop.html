@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop premium beard care products at FNM. Elevate your beard game with oils, balms, and grooming essentials." />
+  <title>FNM Mens Beard Grooming</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="nav">
+    <div class="navTop">
+      <div class="navItem">
+      <!--  <img src="./img/img/logo-transparent-png.png" alt="FNM Logo" class="logo" />-->
+      </div>
+      <div class="navItem">
+        <h1>FNM Full Moisturized Beards</h1>
+      </div>
+    </div>
+    <div class="navBottom">
+      <h3 class="menuItem"><a href="index.html">HOME</a></h3>
+      <h3 class="menuItem"><a href="shop.html">SHOP</a></h3>
+      <h3 class="menuItem"><a href="about.html">ABOUT</a></h3>
+      <h3 class="menuItem">
+        <a href="cart.html">
+          <img src="./img/img/shopping-bag.png" alt="Cart" class="cartIcon" />
+          <span class="cartCount" id="cart-count">0</span>
+        </a>
+      </h3>
+    </div>
+  </nav>
 
+  <section class="shop">
+    <div class="shopBanner">
+      <img src="./img/img/groomingproducts.jpeg" alt="Beard grooming products" class="bannerImg" />
+    </div>
+    <h1 class="shopTitle">Shop Beard Care</h1>
+    <div class="filters">
+      <button class="filterButton" onclick="filterProducts('all')">ALL</button>
+      <button class="filterButton" onclick="filterProducts('cedar')">CEDAR</button>
+      <button class="filterButton" onclick="filterProducts('sandalwood')">SANDALWOOD</button>
+    </div>
+    <div class="productGrid">
+      <div class="productItem" data-scent="cedar">
+        <a href="product-beard-growth-oil.html">
+        <img src="./img/img/beardoil.jpeg" alt="Beard Growth Oil" class="productImg" />
+      </a>
+        <h2 class="productName">BEARD GROWTH OIL</h2>
+        <span class="productPrice">$19.99</span>
+        <button class="addToCart" data-name="Beard Growth Oil" data-price="$19.99" data-image="./img/img/beardoil.jpeg" data-description="A lightweight, non-greasy oil that nourishes and softens your beard." data-scent="Cedar" data-size="2oz">ADD TO CART</button>
+      </div>
+      <div class="productItem" data-scent="sandalwood">
+        <a href="product-beard-balm.html">
+        <img src="./img/img/beardbalm.jpeg" alt="Beard Balm" class="productImg" />
+        </a>
+        <h2 class="productName">BEARD BALM</h2>
+        <span class="productPrice">$24.99</span>
+        <button class="addToCart" data-name="Beard Balm" data-price="$24.99" data-image="./img/img/beardbalm.jpeg" data-description="A conditioning balm that keeps your beard soft, hydrated, and well-groomed." data-scent="Sandalwood" data-size="2oz">ADD TO CART</button>
+      </div>
+      <div class="productItem" data-scent="sandalwood">
+        <a href="product-beard-growth-kit.html">
+        <img src="./img/img/beardgrowthkit.jpeg" alt="Beard Growth Kit" class="productImg" />
+        </a>
+        <h2 class="productName">BEARD GROWTH KIT</h2>
+        <span class="productPrice">$84.99</span>
+        <button class="addToCart" data-name="Beard Growth Kit" data-price="$84.99" data-image="./img/img/beardgrowthkit.jpeg" data-description="A complete kit with all essentials for beard growth and maintenance." data-scent="Sandalwood" data-size="Multiple Items">ADD TO CART</button>
+      </div>
+      <div class="productItem" data-scent="sandalwood">
+        <a href="product-beard-brush.html">
+        <img src="./img/img/beardbrush.jpeg" alt="Beard Brush" class="productImg" />
+        </a>
+        <h2 class="productName">BEARD BRUSH</h2>
+        <span class="productPrice">$10.99</span>
+        <button class="addToCart" data-name="Beard Brush" data-price="$10.99" data-image="./img/img/beardbrush.jpeg" data-description="A firm bristle brush designed to detangle and style your beard." data-scent="None" data-size="Standard">ADD TO CART</button>
+      </div>
+      <div class="productItem" data-scent="cedar">
+        <a href="product-beard-roller.html">
+        <img src="./img/img/beardroller.webp" alt="Beard Roller" class="productImg" />
+        </a>
+        <h2 class="productName">BEARD ROLLER</h2>
+        <span class="productPrice">$12.99</span>
+        <button class="addToCart" data-name="Beard Roller" data-price="$12.99" data-image="./img/img/beardroller.webp" data-description="A derma roller that stimulates hair follicles for thicker beard growth." data-scent="None" data-size="Standard">ADD TO CART</button>
+      </div>
+      <div class="productItem" data-scent="sandalwood">
+        <a href="product-beard-wash.html">
+        <img src="./img/img/CPbeardwash.jpeg" alt="Beard Wash" class="productImg" />
+        </a>
+        <h2 class="productName">BEARD WASH</h2>
+        <span class="productPrice">$15.99</span>
+        <button class="addToCart" data-name="Beard Wash" data-price="$15.99" data-image="./img/img/CPbeardwash.jpeg" data-description="A gentle cleanser that removes dirt and buildup while moisturizing your beard." data-scent="Cedar" data-size="8oz">ADD TO CART</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 FNM Men's Grooming — Stay Moisturized.</p>
+    <div class="socialMedia">
+      <a href="#" target="_blank"><img src="./img/img/instagramlogo.png" alt="Instagram" class="socialIcon" /></a>
+      <a href="#" target="_blank"><img src="./img/img/youtubelogo.webp" alt="YouTube" class="socialIcon" /></a>
+      <a href="#" target="_blank"><img src="./img/img/x_logo.jpg" alt="Twitter" class="socialIcon" /></a>
+      <a href="#" target="_blank"><img src="./img/img/tiktok-logo-png.png" alt="TikTok" class="socialIcon" /></a>
+    </div>
+    <div class="footer-links">
+    <a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
